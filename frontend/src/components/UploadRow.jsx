@@ -99,7 +99,7 @@ export default function UploadRow({ upload }) {
         </span>
         <span style={{ fontFamily: 'var(--font-mono)', fontSize: 10, color: 'var(--text-muted)' }}>
           {formatBytes(upload.size)}
-          {upload.total_chunks > 1 && ` · ${upload.current_chunk || 0}/${upload.total_chunks} chunks`}
+          {upload.total_chunks > 0 && ` · ${upload.current_chunk || 0}/${upload.total_chunks} chunks have been sent to Telegram`}
         </span>
       </div>
     </div>

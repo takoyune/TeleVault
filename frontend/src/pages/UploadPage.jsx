@@ -160,6 +160,29 @@ export default function UploadPage() {
               ))}
             </div>
           </div>
+
+          {/* Scenarios info */}
+          <div className="card" style={{ padding: 18, borderLeft: '3px solid var(--accent)' }}>
+            <div style={{ fontSize: 12, fontWeight: 600, color: 'var(--text-secondary)', marginBottom: 12 }}>
+              Failure Recovery & Scenarios
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+              {[
+                { title: 'Server Crashes / Restarts', desc: 'Active uploads are paused. Because we track sessions and chunk maps in the database, the server will resume exactly where it left off.' },
+                { title: 'Network Disconnects', desc: 'The client retries automatically up to 5 times with exponential backoff before marking the chunk as failed.' },
+                { title: 'Telegram API Limits', desc: 'If Telegram rate-limits the bot (FloodWaitError), the server automatically pauses and waits for the required cooldown period.' }
+              ].map(({ title, desc }) => (
+                <div key={title}>
+                  <div style={{ fontSize: 11, fontWeight: 600, color: 'var(--text-primary)', marginBottom: 4 }}>
+                    {title}
+                  </div>
+                  <div style={{ fontSize: 11, color: 'var(--text-muted)', lineHeight: 1.4 }}>
+                    {desc}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>

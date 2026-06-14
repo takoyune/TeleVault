@@ -41,3 +41,12 @@ scratch/
 # OS
 .DS_Store
 Thumbs.db
+
+# Telethon Sessions
+*.session
+*.session-journal
+
+# App State
+*.state
+.teledrive.state
+.televault.state
