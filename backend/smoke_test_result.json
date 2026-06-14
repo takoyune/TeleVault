@@ -1,0 +1,27 @@
+{
+  "health": {
+    "status": "ready",
+    "version": "1.0.0",
+    "db": "connected",
+    "telegram": "connected",
+    "vault_unlocked": true
+  },
+  "upload_status": 200,
+  "upload": {
+    "file_id": "1052e105-4707-423e-8c51-3960036ed554",
+    "original_name": "smoke-test.txt",
+    "size_bytes": 26,
+    "mime_type": "text/plain",
+    "description": "smoke test upload",
+    "upload_status": "complete",
+    "upload_started": "2026-06-14T07:18:11.699621",
+    "upload_finished": "2026-06-14T07:18:11.913525",
+    "total_chunks": 1,
+    "tags": [
+      "test"
+    ]
+  },
+  "file_count": 1,
+  "download_status": 200,
+  "download_matches": true
+}

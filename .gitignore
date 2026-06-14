@@ -1,0 +1,43 @@
+# Environments
+.env
+.env.local
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# SQLite
+*.sqlite3
+*.db
+televault.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+build/
+.npm/
+
+# Scratch/Temporary
+scratch/
+/frontend/scratch/
+/backend/scratch/
+.tempmediaStorage/
+*tmp*
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
