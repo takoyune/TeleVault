@@ -50,3 +50,8 @@ Thumbs.db
 *.state
 .teledrive.state
 .televault.state
+
+# Agent & Docs
+.agents/
+MASTER_PROJECT_DOC.md
+skills-lock.json
